@@ -1,0 +1,15 @@
+{
+  "name": "ishi-bulletin-board-backend",
+  "version": "1.0.0",
+  "description": "石の掲示板バックエンド",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
+
