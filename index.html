@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>石の掲示板</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>石の掲示板</h1>
+  </header>
+
+  <main>
+    <section class="post-form">
+      <h2>新しい投稿</h2>
+      <form id="postForm">
+        <label for="name">名前：</label>
+        <input type="text" id="name" name="name" required>
+        <label for="message">コメント：</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">投稿</button>
+      </form>
+    </section>
+
+    <section class="post-list">
+      <h2>投稿一覧</h2>
+      <div id="posts" class="stones-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>⚠ 注意事項 ⚠</h3>
+    <ul>
+      <li>車や周りの人に注意してください</li>
+      <li>車道に出ないようにしてください</li>
+      <li>点字ブロックの上に置かないでください</li>
+      <li>他人の敷地に置かないでください</li>
+    </ul>
+    <p class="disclaimer">
+      ※本作品に関連して発生した事故・トラブル等について、一切の責任は負いません。
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
